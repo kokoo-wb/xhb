@@ -1,0 +1,138 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.logistics-header {
+    background: #fff;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    line-height: 1em;
+}
+
+.logistics-header p:last-child {
+    margin-top: 0.25rem;
+}
+
+.logistics-header p span:first-child {
+    color: #999;
+}
+
+.logistics-header p span:last-child {
+    margin-left: 0.7rem;
+}
+
+.logistics-list {
+    background: #fff;
+}
+
+.logistics-list li {
+    height: 2.1rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.logistics-list li:last-child {
+    border-bottom: 0;
+}
+
+.logistics-item-time {
+    width: 2rem;
+    float: left;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logistics-item-time p:first-child {
+    font-size: 0.26rem;
+    color: #999;
+}
+
+.logistics-item-time p:last-child {
+    font-size: 0.36rem;
+    font-weight: bold;
+}
+
+.logistics-status {
+    width: 0.27rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+    height: 1.3rem;
+}
+
+.logistics-status img {
+    width: 0.27rem;
+    height: 0.34rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.135rem;
+    transform: translateY(-50%);
+}
+
+.logistics-status::after {
+    content: '';
+    border-left: 1px solid #e8e8e8;
+    display: block;
+    height: 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0.12rem;
+}
+
+.logistics-status-pass {
+    width: 0.27rem;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rem;
+    height: 1.3rem;
+}
+
+.logistics-status-pass img {
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.1rem;
+    transform: translateY(-50%);
+}
+
+.logistics-status-pass::before {
+    content: '';
+    border-left: 1px solid #e8e8e8;
+    display: block;
+    height: 0.4rem;
+    position: absolute;
+    top: 0;
+    left: 0.12rem;
+}
+
+.logistics-status-pass::after {
+    content: '';
+    border-left: 1px solid #e8e8e8;
+    display: block;
+    height: 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0.12rem;
+}
+
+.logistics-remark {
+    font-size: 0.26rem;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4.7rem;
+    left: 2.5rem;
+}

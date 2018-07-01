@@ -1,0 +1,105 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.car-form {
+    margin-top: 0.1rem;
+    background: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.car-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-form-item:last-child {
+    border: 0;
+}
+
+.car-form-item span:first-child {
+    float: left;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+}
+
+.car-form-item span:last-child {
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.more-ico {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.choose-item {
+    float: right;
+    padding-right: 0.7rem;
+    color: #999;
+}
+
+.choose-item input {
+    height: 0.88rem;
+    border: 0;
+    outline: none;
+    font-size: 0.3rem;
+    text-align: right;
+}
+
+.continute-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}
+
+.choose-item-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 7.5rem;
+    background: #fff;
+}
+
+.choose-item-modal ul {
+    margin-bottom: 1.2rem;
+}
+
+.choose-item-modal ul li {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 0.88rem;
+    padding: 0 0.3rem;
+}
+
+.cancel-btn {
+    display: block;
+    height: 0.95rem;
+    line-height: 0.95rem;
+    background: #fafafa;
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    text-align: center;
+}

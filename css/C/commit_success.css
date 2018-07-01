@@ -1,0 +1,55 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.convert-success {
+    background: #fff;
+    margin-bottom: 0.1rem;
+    font-size: 0.32rem;
+    text-align: center;
+    padding: 0.72rem 0;
+}
+
+.convert-success-img {
+    width: 1.27rem;
+    height: 1.27rem;
+}
+
+.success-tip {
+    font-size: 0.36rem;
+    color: #f18901;
+    line-height: 1em;
+    margin-top: 0.34rem;
+}
+
+.success-wish {
+    font-size: 0.24rem;
+    color: #666;
+    width: 6.9rem;
+    margin: 0 auto;
+    margin-top: 0.16rem;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.success-op-btn {
+    margin-top: 0.5rem;
+}
+
+.success-op-btn a {
+    color: #f18901;
+    border: 1px solid #f18901;
+    border-radius: 0.13rem;
+    -webkit-border-radius: 0.13rem;
+    -moz-border-radius: 0.13rem;
+    -o-border-radius: 0.13rem;
+    padding: 0.14rem 0.38rem;
+    margin: 0 0.17rem;
+}
+
+.success-op-btn a:nth-child(2) {
+    color: #fff;
+    background: #f18901;
+}

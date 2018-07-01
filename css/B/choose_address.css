@@ -1,0 +1,121 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.address-msg {
+    padding-right: 0.8rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    line-height: 1em;
+    overflow: hidden;
+    background: #fff;
+}
+
+.address-msg:first-child {
+    margin-top: 0.1rem;
+}
+
+.address-msg:last-child {
+    border-bottom: 0;
+}
+
+.address-msg p {
+    overflow: hidden;
+    margin: 0.3rem 0;
+    margin-left: 0.92rem;
+}
+
+.username-ico {
+    width: 0.26rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.username {
+    margin-left: 0.1rem;
+    float: left;
+    margin-right: 0.96rem;
+}
+
+.phone-ico {
+    width: 0.21rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.phone {
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.more-ico {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.default-ico {
+    display: none;
+    color: #fff;
+    background: #e72d28;
+    border-radius: 0.1rem;
+    margin-left: 0.24rem;
+    float: left;
+    font-size: 0.24rem;
+    padding: 0.04rem 0.08rem;
+    line-height: 1em;
+}
+
+.set-default {
+    float: left;
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.set-default-selected .set-default {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.set-default-selected .default-ico {
+    display: inline;
+}
+
+.set-default span {
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.add-address-btn {
+    display: block;
+    width: 6.9rem;
+    height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    position: absolute;
+    bottom: 0.98rem;
+    left: 50%;
+    margin-left: -3.45rem;
+}

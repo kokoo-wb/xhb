@@ -1,0 +1,212 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.address-msg {
+    padding: 0 0.24rem 0 0.32rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.address-msg p {
+    overflow: hidden;
+    margin: 0.3rem 0;
+}
+
+.username-ico {
+    width: 0.26rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.username {
+    margin-left: 0.1rem;
+    float: left;
+    margin-right: 0.96rem;
+}
+
+.phone-ico {
+    width: 0.21rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.phone {
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.order-list-item {
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.order-item-header {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    clear: both;
+    padding: 0 0.3rem;
+    background: #fff;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+
+.order-no {
+    color: #999;
+}
+
+.order-status {
+    color: #ec5e2a;
+    float: right;
+}
+
+.order-status-cancel {
+    color: #999;
+    float: right;
+}
+
+.car-ico {
+    width: 0.42rem;
+    height: 0.39rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.3rem;
+}
+
+.curr-address {
+    margin-left: 0.7rem;
+}
+
+.more-ico {
+    width: 0.12rem;
+    height: 0.22rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.3rem;
+}
+
+.order-item-content {
+    padding: 0.2rem 0.24rem 0 0.3rem;
+}
+
+.goods-img {
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+}
+
+.goods-msg-content {
+    height: 1.8rem;
+    width: 5.02rem;
+    float: right;
+    position: relative;
+}
+
+.goods-type {
+    width: 2rem;
+    color: #999;
+    font-size: 0.26rem;
+}
+
+.goods-type p {
+    margin-top: 0.1rem;
+}
+
+.goods-type-list span {
+    margin-right: 0.15rem;
+}
+
+.goods-price {
+    color: #ec5e2a;
+    font-size: 0.36rem;
+}
+
+.goods-num {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.36rem;
+}
+
+.order-item-total-price {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    clear: both;
+    padding: 0 0.3rem;
+}
+
+.order-item-total-price label {
+    color: #999;
+}
+
+.total-price-num {
+    float: right;
+    color: #999;
+}
+
+.total-price-num span:last-child {
+    color: #ec5e2a;
+}
+
+.order-remark {
+    line-height: 1.5em;
+    text-align: right;
+    padding: 0.23rem 0.3rem;
+    overflow: hidden;
+}
+
+.order-remark label {
+    float: left;
+    color: #999;
+}
+
+.order-remark p {
+    width: 5.6rem;
+    float: left;
+    margin-left: 0.59rem;
+    text-align: left;
+}
+
+.order-item-footer {
+    height: 0.88rem;
+    line-height: 0.9rem;
+    text-align: right;
+    padding: 0 0.3rem;
+    background: #fff;
+    position: fixed;
+    width: 6.9rem;
+    bottom: 0;
+}
+
+.order-item-footer a {
+    color: #999;
+    border: 1px solid #999;
+    padding: 0.04rem 0.2rem;
+    border-radius: 0.12rem;
+    margin-left: 0.2rem;
+}
+
+.order-item-footer .confirm-take-goods {
+    color: #fff;
+    background: #e7282a;
+    border: 0;
+    padding: 0.05rem 0.22rem;
+}
+
+.order-cancel {
+    display: none;
+}
+
+.order-sending {
+    display: none;
+}

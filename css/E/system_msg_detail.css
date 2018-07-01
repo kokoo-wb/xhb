@@ -1,0 +1,44 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 0.36rem;
+    font-size: 0.26rem;
+    line-height: 1.7em;
+	letter-spacing:0.02rem;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.distance p {
+    margin-bottom: 0.22rem;
+}
+
+.container h2,
+.container h3,
+.container h1,
+.container h4,
+.container h5,
+.container h6,
+.container p,
+.container span,
+.container a,
+.container div{
+    font-size: 0.26rem !important;
+	line-height: 1.7em !important;
+	text-align: justify;
+	word-break: normal;
+}
+
+.container video{
+	width: 100% !important;
+}
+
+.container img{
+	width: 100% ;
+	display: block;
+	margin:0 auto;
+	height: auto !important;
+	margin-bottom: 0.22rem;
+}

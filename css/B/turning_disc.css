@@ -1,0 +1,240 @@
+.container {
+    background: #f00a38;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.turning-area {
+    width: 7.5rem;
+    height: 10.68rem;
+    background-image: url('../../images/dial_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 9.68rem;
+    background-color: #f00a38;
+}
+
+.turning-intro {
+    text-align: center;
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.turning-intro p {
+    line-height: 0.4rem;
+}
+
+.turning-intro .intro-title {
+    font-size: 0.6rem;
+    color: #f00a38;
+    padding-top: 0.52rem;
+    line-height: 1em;
+    margin-bottom: 0.3rem;
+}
+
+.turning-box {
+    width: 5.66rem;
+    height: 5.66rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.turning {
+    z-index: 100;
+    height: 2.42rem;
+    width: 1.64rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.82rem;
+    margin-top: -1.6rem;
+    background-image: url('../../images/dial_pointer.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.turning p {
+    color: #f00a38;
+    font-size: 0.46rem;
+    width: 0.95rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    line-height: 1.25em;
+    font-weight: bold;
+}
+
+.rota-img {
+    width: 5.66rem;
+    height: 5.66rem;
+}
+
+.reward-goods-title {
+    color: #fff;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    background-image: url('../../images/hot-back-white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6rem 0.08rem;
+}
+
+.goods {
+    background: #fff;
+    margin-bottom: 0.12rem;
+}
+
+.goods-sign {
+    font-size: 0.3rem;
+    text-decoration: 0.3rem;
+    text-align: center;
+    background-image: url('../../images/hot-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem 0.08rem;
+    padding: 0.15rem;
+}
+
+.goods-sign img {
+    width: 0.36rem;
+    height: 0.36rem;
+    position: relative;
+    top: 0.06rem
+}
+
+.goods-list {
+    font-size: 0.26rem;
+    width: 7.56rem;
+    overflow: hidden;
+}
+
+.goods-list li {
+    width: 3.35rem;
+    border-right: 1px solid #f00a38;
+    border-bottom: 1px solid #f00a38;
+    padding: 0.2rem;
+    float: left;
+}
+
+.goods-cover {
+    width: 3.35rem;
+    height: 3.5rem;
+}
+
+.goods-cover img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods-price {
+    margin-top: 0.3rem;
+    color: #ec5e2a
+}
+
+.goods-price span:first-child {
+    font-size: 0.32rem;
+}
+
+.goods-price span:last-child {
+    font-size: 0.2rem;
+}
+
+.goods-price a {
+    width: 0.98rem;
+    height: 0.44rem;
+    display: block;
+    float: right;
+    background: #ec5e2a;
+    color: #fff;
+    text-align: center;
+    line-height: 0.44rem;
+    border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    -o-border-radius: 0.08rem;
+    font-size: 0.26rem;
+}
+
+.reward-record {
+    background: #fff;
+    font-size: 0.3rem;
+}
+
+.reward-record-title {
+    padding: 0.2rem;
+    text-align: center;
+    color: #f18901;
+}
+
+.reward-record-item {
+    padding: 0.3rem;
+}
+
+.down-icon {
+    float: right;
+    width: 0.22rem;
+    height: 0.12rem;
+    position: relative;
+    top: 0.12rem;
+}
+
+.reward-record-time {
+    float: right;
+    margin-right: 0.2rem;
+    color: #999;
+}
+
+.reward-user-list li {
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    margin-left: 0.3rem;
+    padding: 0.28rem 0;
+}
+
+.reward-user-list li:last-child {
+    border-bottom: 0;
+}
+
+.user-img {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    float: left;
+}
+
+.user-reword {
+    float: right;
+    width: 6.1rem;
+}
+
+.user-msg-top {
+    margin-top: 0.03rem;
+}
+
+.user-msg-top span:last-child {
+    float: right;
+    margin-right: 0.3rem;
+}
+
+.user-msg-bottom {
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.user-id {
+    margin-left: 0.15rem;
+}
+
+.user-msg-bottom span:last-child {
+    float: right;
+    margin-right: 0.3rem;
+    width: 1.7rem;
+    display: block;
+    text-align: center;
+}

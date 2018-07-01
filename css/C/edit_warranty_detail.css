@@ -1,0 +1,170 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.warranty-form {
+    margin-top: 0.1rem;
+    background: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.car-bottom-form {
+    margin-bottom: 1.6rem;
+}
+
+.warranty-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.warranty-form-item:last-child {
+    border: 0;
+}
+
+.warranty-form-item span:first-child {
+    float: left;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+}
+
+.warranty-form-item span:last-child {
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.more-ico {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.1rem;
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.choose-item {
+    float: right;
+    padding-right: 0.7rem;
+}
+
+.check-box {
+    display: block;
+    width: 1rem;
+    height: 0.44rem;
+    background-image: url('../../images/switch_off.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.22rem;
+}
+
+.checkbox-input {
+    width: 0;
+    height: 0;
+    outline: none;
+    opacity: 0
+}
+
+.check-box-checked {
+    background-image: url('../../images/switch_on.png');
+}
+
+.select-bjmp-area {
+    float: left;
+    margin-left: 2.4rem;
+    margin-top: 0.3rem;
+}
+
+.select-bjmp-area i {
+    float: left;
+    line-height: 1em;
+    font-style: normal;
+    margin-left: 0.1rem;
+}
+
+.select-bjmp {
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 0.32rem;
+    height: 0.32rem;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.select-bjmp-selected {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.continute-btn {
+    padding: 0.1rem 0;
+    display: block;
+    width: 7.54rem;
+    height: 0.77rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.77rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.36rem;
+}
+
+.continute-btn a {
+    width: 3.75rem;
+    display: block;
+    float: left;
+    border-right: 1px solid #fff
+}
+
+.continute-btn a:last-child {
+    border-right: 0;
+}
+
+.warranty-detail-modal {
+    display: none;
+    position: fixed;
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.warranty-detail {
+    width: 6.3rem;
+    background: #fff;
+    padding: 0.3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 0.26rem;
+    border-radius: 0.15rem;
+}
+
+.warranty-detail-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.3rem;
+}
+
+.warranty-detail p {
+    margin-bottom: 0.1rem;
+}
+
+.close-btn {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 1.26rem;
+}

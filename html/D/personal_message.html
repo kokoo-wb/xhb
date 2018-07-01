@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../lib/larea/larea.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/D/personal_message.css" />
+
+    <title>个人信息</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="personal-msg-form">
+            <div class="form-box">
+                <div class="personal-msg-form-item head-img">
+                    <span>头像</span>
+                    <img src="../../images/17.jpg" />
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>昵称</span>
+                    <div class="choose-item">
+                        <span>Budngu</span>
+                        <!--没有数据的时候显示-->
+                        <!--<span class="no-data">4-20个字，支持中英文、数字</span>-->
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>账号ID</span>
+                    <div style="float: right;padding-right: 0.3rem;line-height: 0.88rem;">
+                        12345678
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <div class="personal-msg-form-item">
+                    <span>手机号</span>
+                    <div class="choose-item">
+                        <span>136****3456</span>
+                        <!--没有数据的时候显示-->
+                        <!--<span class="no-data">未绑定</span>-->
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>微信号</span>
+                    <div class="choose-item">
+                        <input type="text" placeholder="未填写" />
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>性别</span>
+                    <div class="choose-item">
+                        <input type="text" class="choose-sex-input" placeholder="未填写" readonly />
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>城市</span>
+                    <div class="choose-item">
+                        <input type="text" class="choose-city-input" id="cityPick" placeholder="未填写" readonly />
+                        <input id="cityValue" type="hidden" />
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <div class="personal-msg-form-item">
+                    <span>收获账号</span>
+                    <div class="choose-item">
+                        <span>6222 **** **** 1123</span>
+                        <!--没有数据的时候显示-->
+                        <!--<span class="no-data">未填写</span>-->
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>修改登录密码</span>
+                    <div class="choose-item">
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+
+                <div class="personal-msg-form-item">
+                    <span>收获地址管理</span>
+                    <div class="choose-item">
+                        <img class="more-ico" src="../../images/icon-more.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="continute-btn">继续</a>
+
+        <div class="choose-sex-modal">
+            <div class="choose-sex">
+                <ul class="sex-list">
+                    <li>男</li>
+                    <li>女</li>
+                </ul>
+                <a class="cancel-btn">取消</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../lib/zepto/zepto.min.js"></script>
+    <script src="../../lib/larea/larea_data.js"></script>
+    <script src="../../lib/larea/larea.js"></script>
+    <script src="../../js/common.js"></script>
+
+    <script>
+        var area = new LArea();
+        area.init({
+            'trigger': '#cityPick',
+            'valueTo': '#cityValue',
+            'keys': {
+                id: 'value',
+                name: 'text'
+            },
+            'type': 2,
+            'data': [provs_data, citys_data]
+        });
+
+        // 先完善资料
+        $('.continute-btn').click(function() {
+            var _this = this;
+            commonPlugins.confrimModal({
+                title: '需要先绑定安全手机号',
+                cancelName: '退出',
+                confirmName: '去绑定',
+                onOk: function() {
+                    commonPlugins.closeConfirmModal();
+                },
+                onCancel: function() {
+                    commonPlugins.closeConfirmModal();
+                }
+            });
+        });
+
+
+        $('.choose-sex-input').click(function() {
+            $('.choose-sex-modal').show();
+        });
+
+        $('.cancel-btn').click(function() {
+            $('.choose-sex-modal').hide();
+        });
+
+        $('.sex-list li').click(function() {
+            $('.choose-sex-input').val($(this).text());
+            $('.choose-sex-modal').hide();
+        });
+    </script>
+</body>
+
+</html>

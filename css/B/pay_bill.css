@@ -1,0 +1,180 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.goods-msg-area {
+    background: #fff;
+    margin-bottom: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+.choose-address {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    padding: 0 0.24rem 0 0.32rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.more-ico {
+    width: 0.12rem;
+    height: 0.22rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 50%;
+    margin-top: -0.12rem;
+}
+
+.select-num-content {
+    float: right;
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.05rem
+}
+
+.address-msg {
+    padding: 0 0.24rem 0 0.32rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    line-height: 1em;
+    overflow: hidden;
+}
+
+.address-msg p {
+    overflow: hidden;
+    margin: 0.3rem 0;
+}
+
+.username-ico {
+    width: 0.26rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.username {
+    margin-left: 0.1rem;
+    float: left;
+    margin-right: 0.96rem;
+}
+
+.phone-ico {
+    width: 0.21rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.phone {
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.goods-msg {
+    padding: 0.2rem 0.24rem 0.2rem 0.3rem;
+    overflow: hidden;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.goods-msg:last-child {
+    border-bottom: 0;
+}
+
+.goods-img {
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+}
+
+.goods-msg-content {
+    height: 1.8rem;
+    width: 5.02rem;
+    float: right;
+    position: relative;
+}
+
+.goods-type {
+    width: 2rem;
+    color: #999;
+    font-size: 0.26rem;
+}
+
+.goods-type p {
+    margin-top: 0.1rem;
+}
+
+.goods-type-list span {
+    margin-right: 0.15rem;
+}
+
+.goods-price {
+    color: #ec5e2a;
+    font-size: 0.36rem;
+}
+
+.goods-num {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.36rem;
+}
+
+.convert-form {
+    padding-top: 0.1rem;
+    background: #fff;
+}
+
+.convert-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.convert-form-item>span:first-child {
+    display: block;
+    float: left;
+    padding-left: 0.32rem;
+    line-height: 0.88rem;
+}
+
+.convert-form-item>span:last-child {
+    display: block;
+    line-height: 0.88rem;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+.money {
+    color: #ec5e2a;
+    margin-right: 0.1rem;
+}
+
+.convert-form-item input {
+    height: 0.88rem;
+    width: 5.1rem;
+    border: 0;
+    font-size: 0.3rem;
+    outline: none;
+    margin-left: 0.6rem;
+}
+
+.confirm-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.confirm-btn-disable {
+    background: #b9b9b9;
+}

@@ -1,0 +1,134 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.convert-success {
+    background: #fff;
+    margin-bottom: 0.1rem;
+    font-size: 0.32rem;
+    text-align: center;
+    padding: 0.72rem 0;
+}
+
+.convert-success-img {
+    width: 1.27rem;
+    height: 1.27rem;
+}
+
+.success-tip {
+    font-size: 0.36rem;
+    color: #f18901;
+    line-height: 1em;
+    margin-top: 0.34rem;
+}
+
+.success-wish {
+    font-size: 0.24rem;
+    color: #666;
+    width: 3.35rem;
+    margin: 0 auto;
+    margin-top: 0.16rem;
+}
+
+.success-op-btn {
+    margin-top: 0.48rem;
+}
+
+.success-op-btn a {
+    color: #f18901;
+    border: 1px solid #f18901;
+    border-radius: 0.13rem;
+    -webkit-border-radius: 0.13rem;
+    -moz-border-radius: 0.13rem;
+    -o-border-radius: 0.13rem;
+    padding: 0.14rem 0.38rem;
+    margin: 0 0.17rem;
+}
+
+.success-op-btn a:nth-child(2) {
+    color: #fff;
+    background: #f18901;
+}
+
+.hot-goods {
+    background: #fff;
+}
+
+.hot-goods-sign {
+    font-size: 0.3rem;
+    text-decoration: 0.3rem;
+    text-align: center;
+    background-image: url('../../images/hot-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem 0.08rem;
+    padding: 0.15rem;
+}
+
+.hot-goods-sign img {
+    width: 0.36rem;
+    height: 0.36rem;
+    position: relative;
+    top: 0.06rem
+}
+
+.hot-goods-list {
+    font-size: 0.26rem;
+    width: 7.56rem;
+    overflow: hidden;
+}
+
+.hot-goods-list li {
+    width: 3.35rem;
+    border-right: 1px solid #f3f4f3;
+    border-bottom: 1px solid #f3f4f3;
+    padding: 0.3rem 0.2rem;
+    float: left;
+}
+
+.goods-cover {
+    width: 3.35rem;
+    height: 3.5rem;
+}
+
+.goods-cover img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods-title {
+    padding-right: 0.2rem;
+}
+
+.goods-price {
+    margin-top: 0.3rem;
+    color: #ec5e2a
+}
+
+.goods-price span:first-child {
+    font-size: 0.32rem;
+}
+
+.goods-price span:last-child {
+    font-size: 0.2rem;
+}
+
+.goods-price a {
+    width: 0.98rem;
+    height: 0.44rem;
+    display: block;
+    float: right;
+    background: #ec5e2a;
+    color: #fff;
+    text-align: center;
+    line-height: 0.44rem;
+    border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    -o-border-radius: 0.08rem;
+    font-size: 0.26rem;
+}

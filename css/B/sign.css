@@ -1,0 +1,184 @@
+.container {
+    background-color: #fff7d3;
+    background-image: url('../../images/sign_bg_calendar.png');
+    background-size: 7.5rem auto;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.date-active i {
+    padding: 0.1rem;
+    background: #f97e10;
+    border-radius: 2rem;
+    border: 0.04rem solid #ffb674;
+    color: #fff !important;
+}
+
+.calendar-area .calendar-title {
+    background: none;
+    background-image: url('../../images/calendar_head.png');
+    background-size: 6.9rem 1.3rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -0.2rem;
+    height: 1.3rem;
+    color: #fff;
+    font-size: 0.3rem;
+}
+
+.calendar-area .calendar-title b {
+    color: #fff;
+    font-size: 0.3rem;
+    font-weight: normal;
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    margin-left: -1.5rem;
+    line-height: 1em;
+    text-align: center;
+    width: 3rem;
+}
+
+.calendar-area .calendar-title .calendar-title-left {
+    background-repeat: no-repeat;
+    background-image: url('../../images/sign_icon_front.png');
+    background-size: 0.12rem 0.22rem;
+    background-position: left center;
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.25rem;
+    padding: 0;
+    padding-left: 0.35rem;
+    line-height: 1em;
+    height: 1em;
+}
+
+.calendar-area .calendar-title .calendar-title-right {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url('../../images/sign_icon_back.png');
+    background-size: 0.12rem 0.22rem;
+    background-position: right center;
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.25rem;
+    padding: 0;
+    padding-right: 0.35rem;
+    line-height: 1em;
+    height: 1em;
+}
+
+.sign-title {
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1em;
+    margin-top: 0.48rem;
+}
+
+.continute-sign {
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 1em;
+    margin-top: 0.36rem;
+    color: #666;
+}
+
+.sign-num {
+    color: #f00a38;
+}
+
+.calendar-area {
+    position: relative;
+    font-size: 0.24rem;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 0.42rem;
+    position: relative;
+    width: 6.5rem;
+    padding: 1.35rem 0.2rem 0.5rem 0.2rem;
+}
+
+.show-data-btn {
+    overflow: hidden;
+    padding: 0 0.32rem;
+    margin-top: 0.1rem;
+}
+
+.show-rules {
+    display: block;
+    width: 1.67rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.26rem;
+    color: #f34949;
+    background: #fff;
+    border: 1px solid #f34949;
+    border-radius: 0.1rem;
+    float: left;
+}
+
+.show-ranking {
+    display: block;
+    width: 1.67rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.26rem;
+    color: #fff;
+    background: #f34949;
+    border-radius: 0.1rem;
+    float: right;
+}
+
+.submit-btn {
+    width: 6.9rem;
+    margin: 0 auto;
+    margin-top: 0.52rem;
+    height: 0.88rem;
+    background: #f34949;
+    border: 0;
+    font-size: 0.32rem;
+    color: #fff;
+    display: block;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    outline: none;
+}
+
+.sign-rules-modal {
+    display: none;
+    position: fixed;
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.sign-rules {
+    width: 6.3rem;
+    background: #fff;
+    padding: 0.3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 0.26rem;
+    border-radius: 0.15rem;
+}
+
+.sign-rules p {
+    margin-bottom: 0.1rem;
+}
+
+.close-btn {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 1.26rem;
+}

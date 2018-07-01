@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../lib/mdatetimer/zepto.mdatetimer.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/C/improve_car_msg.css" />
+
+    <title>完善车辆信息</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="upload-area">
+            <div class="upload-btn">
+                <img class="upload-img-ico" src="../../images/icon_camera.png" />
+                <img class="uploaded-img" src="../../images/img_drivingid.png" />
+                <input class="file-input" type="file" />
+            </div>
+            <p class="upload-tip" data="0">上传行驶证照片智能提醒</p>
+        </div>
+
+        <div class="car-form">
+            <div class="car-form-item">
+                <span>车牌号</span>
+                <input type="text" placeholder="请输入完整的车牌号" />
+                <img class="help-ico" src="../../images/icon_help.png" />
+            </div>
+
+            <div class="car-form-item">
+                <span>车辆识别码</span>
+                <input type="text " placeholder="请输入车辆识别码" />
+            </div>
+
+            <div class="car-form-item">
+                <span>发动机号</span>
+                <input type="text " placeholder="请输入发动机号" />
+            </div>
+
+            <div class="car-form-item">
+                <span>车辆注册日期</span>
+                <input type="text " placeholder="请输入车辆注册日期" id="picktime" readonly/>
+                <img class="more-ico" src="../../images/icon-more.png" />
+            </div>
+        </div>
+
+        <div class="edit-intro">
+            <p>
+                <span class="label-require">*</span>
+                <span>车辆识别码中不会出现"I "和"Q "两大字母，请特别注意不要误填导致报价出错；</span>
+            </p>
+            <p>
+                <span class="label-require">*</span>
+                <span>智能填写因为角度和光线原因，有可能出现类似字符识别错误，建议在填写后快速核对一边。</span>
+            </p>
+        </div>
+
+        <a class="continute-btn">继 续</a>
+
+        <div class="img-preview-modal">
+            <div class="img-preview">
+                <img src="../../images/img_drivingid.png" />
+            </div>
+
+            <img class="close-btn" src="../../images/icon_close_white.png" />
+        </div>
+
+    </div>
+
+    <script src="../../lib/zepto/zepto.min.js"></script>
+    <script src="../../lib/mdatetimer/zepto.mdatetimer.js"></script>
+    <script>
+        // 弹出照片预览
+        $('.uploaded-img').click(function() {
+            $('.img-preview-modal').show();
+            $('body').css('overflow', 'hidden');
+        });
+
+        // 关闭照片预览
+        $('.close-btn').click(function() {
+            $('.img-preview-modal').hide();
+            $('body').css('overflow', 'visible');
+        });
+
+        // 点击上传按钮
+        $('.upload-img-ico').click(function() {
+            $('.file-input').click();
+        });
+
+        // file input change
+        $('.file-input').change(function() {
+            $('.uploaded-img').show();
+            $('.upload-img-ico').hide();
+            $('.upload-tip').text('重新上传').attr('data', '1');
+        });
+
+        // 点击重新上传
+        $('.upload-tip').click(function() {
+            if ($('.upload-tip').attr('data') == 1) {
+                $('.file-input').click();
+            }
+        });
+
+
+        var config = {
+            mode: 1, //时间选择器模式：1：年月日，2：年月日时分（24小时），3：年月日时分（12小时），4：年月日时分秒。默认：1
+            format: 2, //时间格式化方式：1：2015年06月10日 17时30分46秒，2：2015-05-10  17:30:46。默认：2
+            years: [2000, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017], //年份数组
+            nowbtn: true, //是否显示现在按钮
+            onOk: function() {
+                //alert('OK');
+            }, //点击确定时添加额外的执行函数 默认null
+            onCancel: function() {
+                // alert('A');
+            }, //点击取消时添加额外的执行函数 默认null
+        }
+
+        $('#picktime').mdatetimer(config);
+    </script>
+</body>
+
+</html>

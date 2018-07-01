@@ -1,0 +1,150 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.car-form {
+    margin-top: 0.1rem;
+    background: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.car-bottom-form {
+    margin-bottom: 1.6rem;
+}
+
+.car-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-form-item:last-child {
+    border: 0;
+}
+
+.car-form-item span:first-child {
+    float: left;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+}
+
+.car-form-item span:last-child {
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.choose-item input {
+    height: 0.88rem;
+    border: 0;
+    outline: 0;
+    text-align: right;
+    font-size: 0.3rem;
+}
+
+.more-ico {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.14rem;
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.choose-item {
+    float: right;
+    padding-right: 0.7rem;
+}
+
+.check-box {
+    display: block;
+    width: 1rem;
+    height: 0.44rem;
+    background-image: url('../../images/switch_off.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.22rem;
+}
+
+.check-box-checked {
+    background-image: url('../../images/switch_on.png');
+}
+
+.checkbox-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.continute-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}
+
+.upload-card-img {
+    display: none;
+    margin-top: -1.2rem;
+    margin-bottom: 1.3rem;
+    overflow: hidden;
+}
+
+.upload-item {
+    width: 50%;
+    float: left;
+    height: 2.3rem;
+    text-align: center;
+    position: relative;
+}
+
+.upload-item input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.upload-item p {
+    margin-top: 0.1rem;
+}
+
+.upload-btn {
+    width: 2.5rem;
+    height: 1.5rem;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.upload-btn img {
+    width: 0.4rem;
+    margin-top: 0.55rem
+}
+
+.upload-img-show {
+    display: none;
+    width: 2.54rem;
+    height: 1.54rem;
+    cursor: pointer
+}

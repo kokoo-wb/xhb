@@ -1,0 +1,179 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.upload-area {
+    width: 7.5rem;
+    height: 4.6rem;
+    background: #fff;
+    margin-bottom: 0.1rem;
+    overflow: hidden;
+}
+
+.upload-btn {
+    width: 4.7rem;
+    height: 3.26rem;
+    background: #f3f4f3;
+    margin: 0 auto;
+    margin-top: 0.32rem;
+    text-align: center;
+}
+
+.upload-img-ico {
+    width: 1.08rem;
+    height: 0.88rem;
+    margin-top: 1.2rem;
+}
+
+.uploaded-img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.file-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    left: -2000px;
+}
+
+.upload-tip {
+    font-size: 0.3rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0.35rem;
+}
+
+.re-upload-btn {
+    cursor: pointer;
+}
+
+.car-form {
+    margin-top: 0.1rem;
+    background: #fff;
+}
+
+.car-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-form-item:last-child {
+    border: 0;
+}
+
+.car-form-item span:first-child {
+    display: block;
+    float: left;
+    width: 2.2rem;
+    padding-left: 0.32rem;
+    line-height: 0.88rem;
+}
+
+.car-form-item span:last-child {
+    display: block;
+    float: left;
+    width: 4.7rem;
+    line-height: 0.88rem;
+}
+
+.car-form-item input {
+    height: 0.88rem;
+    width: 4rem;
+    border: 0;
+    font-size: 0.3rem;
+    outline: none;
+}
+
+.help-ico {
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.14rem;
+    width: 0.28rem;
+    height: 0.28rem;
+}
+
+.more-ico {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.14rem;
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.edit-intro {
+    line-height: 1.7em;
+    margin-top: 0.3rem;
+    padding: 0 0.3rem;
+    margin-bottom: 1.6rem;
+}
+
+.edit-intro p {
+    font-size: 0.3rem;
+    color: #999;
+}
+
+.label-require {
+    color: #d92c27;
+}
+
+.continute-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}
+
+.img-preview-modal {
+    display: none;
+    position: fixed;
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.img-preview {
+    width: 6.9rem;
+    background: #fff;
+    height: 4.84rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 0.26rem;
+    border-radius: 0.15rem;
+}
+
+.img-preview p {
+    margin-bottom: 0.1rem;
+}
+
+.close-btn {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 1.26rem;
+}
+
+.img-preview img {
+    width: 100%;
+    height: 100%;
+}

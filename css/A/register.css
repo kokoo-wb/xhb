@@ -1,0 +1,119 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.input-item {
+    border-bottom: 1px solid #e8e8e8;
+    width: 6.9rem;
+    margin: 0 auto;
+    height: 1rem;
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.input-item:first-child {
+    margin-top: 1.1rem;
+}
+
+.input-item input {
+    position: absolute;
+    border: 0;
+    outline: none;
+    font-size: 0.28rem;
+    left: 0.78rem;
+    height: 0.4rem;
+    width: 5.5rem;
+    top: 0.3rem;
+    background: none;
+}
+
+.input-item .validate-num {
+    width: 3.5rem;
+}
+
+.input-ico {
+    width: 0.48rem;
+    height: 0.48rem;
+    position: absolute;
+    top: 0.27rem;
+}
+
+.eye-ico {
+    position: absolute;
+    right: 0;
+    width: 0.36rem;
+    height: 0.28rem;
+    top: 0.36rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.eye-close {
+    background-image: url('../../images/register_icon_password_unvisible.png');
+}
+
+.eye-open {
+    background-image: url('../../images/register_icon_password_visible.png');
+}
+
+.get-vld-num {
+    width: 2rem;
+    display: block;
+    height: 0.58rem;
+    background: #f18700;
+    position: absolute;
+    right: 0;
+    font-size: 0.28rem;
+    color: #fff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    text-align: center;
+    line-height: 0.58rem;
+    top: 0.2rem;
+    cursor: pointer;
+}
+
+.getting-vld-num {
+    background: #b9b9b9;
+}
+
+.submit-btn {
+    width: 6.9rem;
+    margin: 0 auto;
+    margin-top: 1.76rem;
+    height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915 , #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915 , #d33c3c); 
+    background: -moz-linear-gradient(bottom right, #f04915 , #d33c3c);
+    background: linear-gradient(to bottom right, #f04915 , #d33c3c); 
+    border: 0;
+    font-size: 0.36rem;
+    color: #fff;
+    display: block;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    outline: none;
+}
+
+.agree-protocol {
+    font-size: 0.28rem;
+    text-align: center;
+    margin-top: 0.54rem;
+    margin-bottom: 4.54rem;
+}
+
+.agree-protocol span {
+    color: #666;
+}
+
+.agree-protocol a {
+    color: #f18700;
+}

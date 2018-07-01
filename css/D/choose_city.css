@@ -1,0 +1,71 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.curr-city {
+    font-size: 0.3rem;
+    color: #6f6f6f;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    background: #fff;
+    padding: 0 0.22rem;
+}
+
+.curr-city-name {
+    margin-left: 0.2rem;
+    color: #f18700;
+}
+
+.zm-list {
+    height: 0.57rem;
+    line-height: 0.57rem;
+    padding: 0 0.22rem;
+    font-size: 0.32rem;
+}
+
+.area-list {
+    background: #fff;
+}
+
+.area-list li {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 0.3rem;
+    position: relative;
+}
+
+.area-list li:last-child {
+    border-bottom: 0;
+}
+
+.area-list li span {
+    line-height: 0.88rem;
+    margin-left: 0.22rem;
+}
+
+.choose-zm {
+    position: fixed;
+    left: 50%;
+    margin-left: 3.45rem;
+    background: #fff;
+    width: 0.3rem;
+    top: 0;
+    bottom: 0;
+    font-size: 0.2rem;
+    text-align: center;
+}
+
+.zm-menu-area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.zm-menu-area a {
+    width: 0.3rem;
+    display: block;
+    color: #f18700;
+    padding: 0.03rem 0;
+}

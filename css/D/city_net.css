@@ -1,0 +1,112 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.curr-city {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 0.1rem;
+    background: #fff;
+    line-height: 0.88rem;
+    padding: 0 0.3rem;
+    font-size: 0.36rem;
+}
+
+.curr-city img {
+    width: 0.28rem;
+    height: 0.36rem;
+    float: left;
+    margin-top: 0.28rem;
+}
+
+.curr-city-name {
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.choose-city {
+    float: right;
+    color: #e7282d;
+    font-size: 0.3rem;
+}
+
+.city-net-list {
+    background: #fff;
+}
+
+.city-net-list li {
+    padding: 0.36rem 0.3rem 0.51rem 0.3rem;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.net-header {
+    overflow: hidden;
+    line-height: 1em;
+}
+
+.net-name {
+    float: left;
+}
+
+.phone-btn {
+    float: left;
+    margin-top: 0.02rem;
+    margin-left: 0.22rem;
+}
+
+.location-btn {
+    float: left;
+    margin-top: 0.02rem;
+    margin-left: 0.1rem;
+}
+
+.phone-btn img,
+.location-btn img {
+    width: 0.28rem;
+    height: 0.28rem;
+}
+
+.distance {
+    font-size: 0.26rem;
+    color: #999;
+    float: right;
+}
+
+.net-phone,
+.net-location {
+    font-size: 0.26rem;
+    color: #999;
+    line-height: 1.5em;
+    margin-top: 0.1rem;
+}
+
+.apply-btn {
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    color: #fff;
+    background: #ec5e2a;
+    font-size: 0.26rem;
+    border-radius: 0.12rem;
+    padding: 0.06rem 0.22rem;
+}
+
+.no-net {
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 1em;
+    margin-top: 4.42rem;
+}
+
+.no-net p {
+    margin-top: 0.39rem;
+    padding: 0 1.5rem;
+}
+
+.no-net img {
+    width: 2.05rem;
+    height: 1.71rem;
+}

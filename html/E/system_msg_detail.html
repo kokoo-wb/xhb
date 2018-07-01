@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/E/system_msg_detail.css" />
+
+    <title>系统消息详情</title>
+
+    <script>
+        initScreen();
+        window.onresize = function () {
+            initScreen();
+        }
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+        function initScreen() {
+            defaultfont();
+            setTimeout(function () {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <script>
+        // 可以通过其他方式将富文本插入container中
+        document.querySelector('.container').innerHTML = '<img src="http://p1.pstatp.com/origin/47750005a24373734b4e" /><p>计划经济体制下，医疗卫生体系定位明确，中国的医疗卫生创造了一系列辉煌，在医疗服务、预防保健等各个方面都取得了很大的成就。农村和城镇的医疗服务也在这时全面展开，医疗服务的可及性大大增强。由于社会经济发展和综合国力的影响以及“政事一体化”的管理，中国在医疗技术，服务水平和基础设施建设方面都不同程度地存在一定问题。这就要求人们不断探索新的发展途径。中国的医疗保障制度是在新中国成立后逐步建立和发展起来的。由于各种原因，中国的医疗保障制度是城乡分离的，各自有不同的特点和发展过程。在城镇，先后经历了公费、劳保医疗制度，城镇医疗保险改革和试点阶段，全国范围内城镇职工基本医疗保险制度的确立，以及多层次医疗保障体系的探索等阶段；在农村，伴随着合作医疗制度的兴衰，努力开展新型农村合作医疗制度的建设工作，进而对农村医疗保障制度多样化进行探索与完善。</p>';
+    </script>
+</body>
+
+</html>

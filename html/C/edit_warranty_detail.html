@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/C/edit_warranty_detail.css" />
+
+    <title>填写险种详情</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="warranty-form car-bottom-form">
+            <div class="warranty-form-item">
+                <span>是否过户</span>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="sfgh" name="sfgh" value="sfgh" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>代缴车船税</span>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="djccs" name="djccs" value="djccs" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>车损险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="csxbjmp" name="csxbjmp" value="csxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="csx" name="csx" value="csx" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>玻璃险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="blxbjmp" name="blxbjmp" value="blxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <div class="choose-item">
+                    <span>5万</span>
+                    <img class="more-ico" src="../../images/icon-more.png" />
+                </div>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>盗抢险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="dqxbjmp" name="dqxbjmp" value="dqxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="dqx" name="dqx" value="dqx" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>司机险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="sjxbjmp" name="sjxbjmp" value="sjxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <div class="choose-item">
+                    <span>1万</span>
+                    <img class="more-ico" src="../../images/icon-more.png" />
+                </div>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>乘客险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="ckxbjmp" name="ckxbjmp" value="ckxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <div class="choose-item">
+                    <span>1万/座</span>
+                    <img class="more-ico" src="../../images/icon-more.png" />
+                </div>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>玻璃险</span>
+                <div class="choose-item">
+                    <span>不投</span>
+                    <img class="more-ico" src="../../images/icon-more.png" />
+                </div>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>划痕险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="hhxbjmp" name="hhxbjmp" value="hhxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <div class="choose-item">
+                    <span>不投</span>
+                    <img class="more-ico" src="../../images/icon-more.png" />
+                </div>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>自燃险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="zrxbjmp" name="zrxbjmp" value="zrxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="zrx" name="zrx" value="zrx" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>涉水险</span>
+                <div class="select-bjmp-area">
+                    <a class="select-bjmp" data="0">
+                        <input type="checkbox" class="checkbox-input" id="ssxbjmp" name="ssxbjmp" value="ssxbjmp" />
+                    </a>
+                    <i>不计免赔</i>
+                </div>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="ssx" name="ssx" value="ssx" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>指定专修厂险</span>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="zdzxcx" name="zdzxcx" value="zdzxcx" />
+                </a>
+            </div>
+
+            <div class="warranty-form-item">
+                <span>第三方特约险</span>
+                <a class="check-box" data="0">
+                    <input type="checkbox" class="checkbox-input" id="dsftyx" name="dsftyx" value="dsftyx" />
+                </a>
+            </div>
+        </div>
+
+        <div class="continute-btn">
+            <a>获得去年险种</a>
+            <a>继续</a>
+        </div>
+
+        <div class="warranty-detail-modal">
+            <div class="warranty-detail">
+                <p class="warranty-detail-title">交强险</p>
+                <p>1、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>2、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>3、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+                <p>4、中积分后，弹框提示“恭喜你开出xx奖获得100积分！</p>
+                <p>5、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>6、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>7、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+            </div>
+
+            <img class="close-btn" src="../../images/icon_close_white.png" />
+        </div>
+
+    </div>
+
+    <script src="../../lib/zepto/zepto.min.js"></script>
+    <script>
+        // 弹出保险详情
+        $('.choose-item').click(function() {
+            $('.warranty-detail-modal').show();
+            $('body').css('overflow', 'hidden');
+        });
+
+        // 关闭保险详情
+        $('.close-btn').click(function() {
+            $('.warranty-detail-modal').hide();
+            $('body').css('overflow', 'visible');
+        });
+
+        // 选择不计免赔
+        $('.select-bjmp').click(function() {
+            if ($(this).attr('data') == 0) {
+                $(this).addClass('select-bjmp-selected').attr('data', 1);
+                $(this).find('.checkbox-input').attr('checked', true);
+            } else {
+                $(this).removeClass('select-bjmp-selected').attr('data', 0);
+                $(this).find('.checkbox-input').attr('checked', false);
+            }
+        });
+
+        // checkbox选择
+        $('.check-box').click(function() {
+            if ($(this).attr('data') == 0) {
+                $(this).addClass('check-box-checked').attr('data', 1);
+                $(this).find('.checkbox-input').attr('checked', true);
+            } else {
+                $(this).removeClass('check-box-checked').attr('data', 0);
+                $(this).find('.checkbox-input').attr('checked', false);
+            }
+        });
+    </script>
+</body>
+
+</html>

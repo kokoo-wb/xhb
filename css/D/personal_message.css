@@ -1,0 +1,142 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.personal-msg-form {
+    margin-top: 0.1rem;
+    margin-bottom: 1.6rem;
+}
+
+.form-box {
+    margin-bottom: 0.2rem;
+    background: #fff;
+}
+
+.personal-msg-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.personal-msg-form-item:last-child {
+    border: 0;
+}
+
+.personal-msg-form-item span:first-child {
+    float: left;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+}
+
+.personal-msg-form-item span:last-child {
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.head-img {
+    height: 1.44rem;
+}
+
+.head-img span:first-child {
+    line-height: 1.44rem;
+}
+
+.head-img img {
+    float: right;
+    height: 0.88rem;
+    width: 0.88rem;
+    border-radius: 1rem;
+    margin-right: 0.3rem;
+    margin-top: 0.28rem;
+}
+
+.more-ico {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    margin-top: -0.1rem;
+    width: 0.12rem;
+    height: 0.22rem;
+}
+
+.choose-item {
+    float: right;
+    padding-right: 0.7rem;
+}
+
+.choose-item .no-data {
+    color: #999;
+}
+
+.choose-item input {
+    height: 0.88rem;
+    border: 0;
+    outline: none;
+    font-size: 0.3rem;
+    text-align: right;
+}
+
+.continute-btn {
+    padding: 0.1rem 0;
+    display: block;
+    width: 7.54rem;
+    height: 0.77rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.77rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.36rem;
+}
+
+.choose-sex-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 7.5rem;
+}
+
+.choose-sex {
+    position: absolute;
+    width: 7.5rem;
+    bottom: 0;
+    text-align: center;
+}
+
+.choose-sex ul {
+    width: 6.7rem;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+}
+
+.choose-sex ul li {
+    height: 0.88rem;
+    line-height: 0.95rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.choose-sex ul li:last-child {
+    border: 0;
+}
+
+.cancel-btn {
+    height: 0.95rem;
+    width: 6.7rem;
+    background: #fff;
+    display: block;
+    margin: 0.2rem auto 0.4rem auto;
+    border-radius: 0.1rem;
+    line-height: 0.95rem;
+}

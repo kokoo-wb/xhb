@@ -1,0 +1,140 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.price-result-intro {
+    line-height: 1.9em;
+    padding: 0.2rem 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.1rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+.price-result-intro p {
+    font-size: 0.3rem;
+    color: #999;
+    float: left;
+    width: 6.6rem;
+    margin-left: 0.05rem;
+}
+
+.label-require {
+    color: #d92c27;
+    float: left;
+}
+
+.price-result-form {
+    margin-top: 0.1rem;
+    background: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.warranty-list-item {
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+    height: 1.66rem;
+}
+
+.warranty-img {
+    width: 2.6rem;
+    height: 1rem;
+    position: relative;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.35rem;
+}
+
+.warranty-img img {
+    max-height: 1rem;
+    max-width: 2.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.price {
+    width: 3.3rem;
+    overflow: hidden;
+    font-size: 0.3rem;
+    float: left;
+    margin-left: 0.52rem;
+    margin-top: 0.4rem;
+    line-height: 1em;
+}
+
+.price-num {
+    font-size: 0.36rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.send-jf {
+    margin-top: 0.3rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.price-calcu {
+    float: left;
+    line-height: 1em;
+    font-size: 0.3rem;
+    margin-left: 0.52rem;
+    margin-top: 0.65rem;
+}
+
+.price-calcu img,
+.send-jf img {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+}
+
+.price-calcu i,
+.send-jf i {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 0.4rem;
+    color: #999;
+}
+
+.select-price {
+    cursor: pointer;
+    display: block;
+    width: 0.32rem;
+    height: 0.32rem;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.select-price-selected {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.confirm-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}

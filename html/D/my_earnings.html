@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/D/my_earnings.css" />
+
+    <title>我的收益</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="earning-title">
+            <span>2017年第19期</span>
+            <span>未结佣金 ￥20660.00</span>
+        </div>
+        <ul class="achieve">
+            <li>
+                <div class="achieve-img">
+                    <img src="../../images/wallet_pack.png" />
+                </div>
+                <div class="achieve-title">
+                    <p>绩效激励-9月拓展王</p>
+                    <p class="achieve-time">9月12日 21:11</p>
+                </div>
+                <span class="achieve-reward">+100</span>
+            </li>
+            <li>
+                <div class="achieve-img">
+                    <img src="../../images/like.png" />
+                </div>
+                <div class="achieve-title">
+                    <p>xxx的对下业绩分成</p>
+                    <p class="achieve-time">9月12日 21:11</p>
+                </div>
+                <span class="achieve-reward">+120</span>
+            </li>
+            <li>
+                <div class="achieve-img">
+                    <img src="../../images/wallet.png" />
+                </div>
+                <div class="achieve-title">
+                    <p>粤A90xxEx佣金收入</p>
+                    <p class="achieve-time">9月12日 21:11</p>
+                </div>
+                <span class="achieve-reward">+120</span>
+            </li>
+        </ul>
+
+        <div class="show-more">
+            <img src="../../images/icon-up.png" />
+            <p>查看更多</p>
+        </div>
+
+        <div class="select-time-modal">
+            <div class="select-time-content">
+                <img class="up-ico" src="../../images/icon_down.png" />
+                <ul class="select-time-list">
+                    <li class="select-time-active">第1期</li>
+                    <li>第2期</li>
+                    <li>第3期</li>
+                    <li>第4期</li>
+                    <li>第5期</li>
+                    <li>第6期</li>
+                    <li>第7期</li>
+                    <li>第8期</li>
+                    <li>第9期</li>
+                    <li>第10期</li>
+                    <li>第11期</li>
+                    <li>第12期</li>
+                    <li>第13期</li>
+                    <li>第14期</li>
+                    <li>第15期</li>
+                    <li>第16期</li>
+                    <li>第17期</li>
+                    <li>第18期</li>
+                    <li>第19期</li>
+                    <li>第20期</li>
+                    <li>第21期</li>
+                    <li>第22期</li>
+                    <li>第23期</li>
+                    <li>第24期</li>
+                </ul>
+                <div class="select-time-tip">
+                    <span>*</span>
+                    <p>此处仅可查看当年1月至上月的历史收益，按照每月 两次结算日分为24期，每月1日-15日为上期，每月1 6日-月末为下期。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../lib/zepto/zepto.min.js"></script>
+
+    <script>
+        // 点击查看更多
+        $('.show-more').click(function() {
+            $('.select-time-modal').show();
+        });
+
+        // 关闭查看更多
+        $('.up-ico').click(function() {
+            $('.select-time-modal').hide();
+        });
+
+        $('.select-time-list li').click(function() {
+            $('.select-time-list li').removeClass('select-time-active');
+            $(this).addClass('select-time-active');
+            $('.select-time-modal').hide();
+        });
+    </script>
+</body>
+
+</html>

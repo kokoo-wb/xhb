@@ -1,0 +1,121 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.commit-warranty-header {
+    background: #fff;
+}
+
+.warranty-title {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    font-size: 0.36rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.op-btn {
+    position: absolute;
+    color: #e72d28;
+    font-size: 0.3rem;
+    right: 0.3rem;
+}
+
+.warranty-price {
+    height: 1.66rem;
+}
+
+.warranty-price img {
+    width: 2.6rem;
+    margin-left: 0.35rem;
+    margin-top: 0.45rem;
+}
+
+.warranty-price span {
+    float: right;
+    line-height: 1.66rem;
+    margin-right: 0.3rem;
+    font-weight: bold;
+    font-size: 0.36rem;
+}
+
+.warranty-form {
+    margin-top: 0.1rem;
+    background: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.warranty-bottom-form {
+    margin-bottom: 1.6rem;
+}
+
+.warranty-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    position: relative;
+}
+
+.warranty-form-item:last-child {
+    border: 0;
+}
+
+.warranty-form-item span:first-child {
+    float: left;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+}
+
+.warranty-form-item span:last-child {
+    margin-right: 0.3rem;
+    float: right;
+    line-height: 0.88rem;
+}
+
+.warranty-form-header {
+    font-size: 0.36rem;
+    font-weight: bold;
+}
+
+.send-jf {
+    color: #999;
+    font-size: 0.3rem;
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-left: 1.2rem;
+}
+
+.send-jf img {
+    width: 0.32rem;
+    height: 0.32rem;
+    float: left;
+}
+
+.send-jf i {
+    font-style: normal;
+    font-weight: normal;
+    float: left;
+    line-height: 1em;
+    margin-left: 0.1rem;
+}
+
+.confirm-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}

@@ -1,0 +1,9 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+    padding: 0.3rem;
+    font-size: 0.26rem;
+    color: rgb(51,51,51);
+    line-height: 1.7em;
+}

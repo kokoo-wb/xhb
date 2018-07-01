@@ -1,0 +1,179 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.goods-msg-area {
+    background: #fff;
+    margin-bottom: 0.2rem;
+    margin-top: 0.1rem;
+}
+
+.select-num-content {
+    float: right;
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.05rem
+}
+
+.goods-msg {
+    padding: 0.2rem 0.24rem 0.2rem 0.3rem;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.goods-msg:last-child {
+    border-bottom: 0;
+}
+
+.goods-img {
+    width: 1.8rem;
+    height: 1.8rem;
+    float: left;
+    margin-left: 0.54rem;
+}
+
+.goods-msg-content {
+    height: 1.8rem;
+    width: 4.42rem;
+    float: right;
+    position: relative;
+}
+
+.goods-type {
+    width: 2rem;
+    color: #999;
+    font-size: 0.26rem;
+}
+
+.goods-type p {
+    margin-top: 0.1rem;
+}
+
+.goods-type-list span {
+    margin-right: 0.15rem;
+}
+
+.goods-price {
+    color: #ec5e2a;
+    font-size: 0.36rem;
+}
+
+.select-num-content span {
+    display: block;
+    width: 0.6rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    border: 1px solid #aaa;
+    text-align: center;
+    color: #999;
+}
+
+.select-num-content .reduce {
+    float: left;
+    border-right: 0;
+}
+
+.select-num-content .add {
+    float: right;
+    border-left: 0;
+}
+
+.select-num-content input {
+    width: 0.8rem;
+    height: 0.48rem;
+    border: 1px solid #aaa;
+    float: left;
+    padding: 0 0.1rem;
+    outline: none;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.select-item {
+    float: left;
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.select-all-btn {
+    float: left;
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.select-all-selected,
+.select-item-selected .select-item {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.pay-footer {
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    background: #fff;
+}
+
+.select-all {
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+    font-size: 0.26rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+}
+
+.select-all span {
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.bill-price-area {
+    height: 0.98rem;
+    width: 5.3rem;
+    text-align: center;
+    float: left;
+    font-size: 0.26rem;
+    line-height: 1em;
+}
+
+.bill-price {
+    margin-top: 0.18rem;
+}
+
+.price-num {
+    color: #ec5e2a;
+}
+
+.left-money {
+    margin-top: 0.1rem;
+    color: #999;
+}
+
+.pay-btn {
+    font-size: 0.28rem;
+    background: #e72d28;
+    color: #fff;
+    display: block;
+    width: 2.2rem;
+    text-align: center;
+    line-height: 0.98rem;
+    float: right
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../lib/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/D/car_detail_will_deal.css" />
+
+    <title>车辆详情-未处理</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="car-detail-form">
+            <div class="car-detail-form-item">
+                <label>车牌</label>
+                <span class="form-value">粤A1075C</span>
+                <div class="will-deal">
+                    <img src="../../images/icon_wcl.png" />
+                    <span>未处理</span>
+                </div>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>车主</label>
+                <span class="form-value">张依依</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>型号</label>
+                <span class="form-value">AUD1980047E3(AUDIQ5)</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>识别码</label>
+                <span class="form-value">LBV2347231H0BF322</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>发动机号</label>
+                <span class="form-value">0339T303</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>注册日期</label>
+                <span class="form-value">2016-12-12</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>未上牌新车</label>
+                <span class="form-value">否</span>
+            </div>
+
+            <div class="car-detail-form-item">
+                <label>保费</label>
+                <span class="form-value"></span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a class="edit-btn">编辑</a>
+            <a class="delete-btn">删除</a>
+        </div>
+
+    </div>
+
+    <script src=" ../../lib/zepto/zepto.min.js "></script>
+    <script src=" ../../js/common.js "></script>
+
+    <script>
+        // 删除车辆信息
+        $('.delete-btn').click(function() {
+            var _this = this;
+            commonPlugins.confrimModal({
+                title: '确认删除车辆信息？',
+                cancelName: '暂不删除',
+                confirmName: '确认删除',
+                onOk: function() {
+                    commonPlugins.closeConfirmModal();
+                },
+                onCancel: function() {
+                    commonPlugins.closeConfirmModal();
+                }
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

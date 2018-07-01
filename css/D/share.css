@@ -1,0 +1,52 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.share-content {
+    padding: 0.4rem 0.3rem;
+}
+
+.share-content p {
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+}
+
+.share-qr {
+    width: 4.57rem;
+    height: 6.39rem;
+    background-image: url('../../images/bg_qr.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    text-align: center;
+}
+
+.share-qr img {
+    width: 1.74rem;
+    height: 1.74rem;
+    margin-top: 3.1rem;
+}
+
+.submit-btn {
+    width: 6.9rem;
+    margin: 0 auto;
+    margin-top: 1.26rem;
+    height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    border: 0;
+    font-size: 0.36rem;
+    color: #fff;
+    display: block;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    margin-bottom: 5.36rem;
+    outline: none;
+}

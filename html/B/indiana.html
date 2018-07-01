@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/B/indiana.css" />
+
+    <title>快乐夺宝</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="indiana-show">
+            <div class="indiana-rules">
+                <span>夺宝开奖倒计时</span>
+                <span class="begin-time">11:12:11</span>
+                <a class="show-game-rules-btn">游戏规则</a>
+            </div>
+
+            <p class="indiana-intro">本期参与夺宝需消耗50积分，参与人数达到1000人则启动夺 宝，奖品必定100%随机发放给其中3个参与者，若参与人数 未达数目，则夺宝取消，积分全额退还到每个人账户。</p>
+            <div class="indiana-cover">
+                <img src="../../images/16.png" />
+            </div>
+            <p class="indiana-title">IPHONE X / 黑色 (256G)</p>
+            <a class="join-btn">参与夺宝</a>
+        </div>
+
+
+        <div class="reward-record">
+            <p class="reward-record-title">历史开奖记录</p>
+            <ul class="reward-record-list">
+                <li>
+                    <div class="reward-record-item">
+                        <span>第2期</span>
+                        <img class="down-icon" src="../../images/icon_down.png" />
+                        <span class="reward-record-time">2012/12/11 12:11:21</span>
+                    </div>
+                    <ul class="reward-user-list">
+                        <li>
+                            <img class="user-img" src="../../images/17.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="user-img" src="../../images/18.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="user-img" src="../../images/17.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="reward-record-item">
+                        <span>第1期</span>
+                        <img class="down-icon" src="../../images/icon_down.png" />
+                        <span class="reward-record-time">2012/12/11 12:11:21</span>
+                    </div>
+                    <ul class="reward-user-list">
+                        <li>
+                            <img class="user-img" src="../../images/17.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="user-img" src="../../images/18.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="user-img" src="../../images/17.jpg" />
+                            <div class="user-reword">
+                                <p class="user-msg-top">
+                                    <span>Aufmngvty</span>
+                                    <span>2017/12/21</span>
+                                </p>
+                                <p class="user-msg-bottom">
+                                    <span>ID:</span>
+                                    <span class="user-id">12345678</span>
+                                    <span>21:12:22</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="game-rules-modal">
+            <div class="game-rules">
+                <p>整体规则：</p>
+                <p>1、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>2、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>3、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+                <p>4、中积分后，弹框提示“恭喜你开出xx奖获得100积分！</p>
+                <p>5、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>6、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>7、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+            </div>
+
+            <img class="close-btn" src="../../images/icon_close_white.png" />
+        </div>
+
+    </div>
+
+    <script src=" ../../lib/zepto/zepto.min.js "></script>
+
+    <script>
+        // 弹出游戏规则
+        $('.show-game-rules-btn').click(function() {
+            $('.game-rules-modal').show();
+            $('body').css('overflow', 'hidden');
+        });
+
+        // 关闭游戏规则
+        $('.close-btn').click(function() {
+            $('.game-rules-modal').hide();
+            $('body').css('overflow', 'visible');
+        });
+
+        // 参与夺宝
+        $('.join-btn').click(function() {
+            $(this).css('background', '#b9b9b9').text('已参与');
+        });
+
+        // 打开兑奖记录
+        $('.reward-record-item').click(function() {
+            if ($(this).closest('li').attr('class') == 'open') {
+                $('.reward-record-list>li').removeClass('open');
+            } else {
+                $('.reward-record-list>li').removeClass('open');
+                $(this).closest('li').addClass('open');
+            }
+        });
+    </script>
+</body>
+
+</html>

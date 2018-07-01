@@ -1,0 +1,136 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    width: 7.5rem;
+    height: 12.6rem;
+    background-image: url('../../images/bg_fxyl.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.reword-rules {
+    position: absolute;
+    right: 0.87rem;
+    top: 0.75rem;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.share-soon {
+    position: absolute;
+    right: 0.87rem;
+    top: 1.6rem;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.share-num {
+    position: absolute;
+    font-size: 0.6rem;
+    color: #fff;
+}
+
+.hundred {
+    left: 0.8rem;
+    top: 1.1rem;
+}
+
+.fifty {
+    right: 0.85rem;
+    top: 3.05rem;
+}
+
+.twenty {
+    left: 1.05rem;
+    top: 5.1rem;
+}
+
+.ten {
+    right: 0.85rem;
+    top: 7.05rem;
+}
+
+.five {
+    left: 1.05rem;
+    top: 9.1rem;
+}
+
+.wn {
+    width: 1.1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.55rem;
+}
+
+.get-reward-modal {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 7.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.get-reward-content {
+    position: relative;
+    width: 6.2rem;
+    background: #fff;
+    min-height: 3rem;
+    margin: 0 auto;
+    border-radius: 0.15rem;
+    margin-top: 2rem;
+}
+
+.reward-content {
+    padding: 0.3rem 0.3rem 1.3rem 0.3rem;
+    min-height: 3rem;
+}
+
+.reward-content h1 {
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.reward-content p {
+    margin-top: 0.2rem;
+}
+
+.get-reward-area {
+    text-align: center;
+    width: 6.2rem;
+    bottom: 0.2rem;
+    position: absolute;
+}
+
+.get-reward-area a {
+    display: block;
+    width: 1.8rem;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    color: #fff;
+    background: #fd510f;
+    margin: 0 auto;
+    border-radius: 0.08rem;
+}
+
+.close-btn {
+    display: block;
+    margin: 0 auto;
+    width: 0.8rem;
+    margin-top: 1rem;
+}
+
+.gift-ico {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2213171442,814863500&fm=27&gp=0.jpg');
+}
+
+.gift-ico-open {
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514407473845&di=6e55b96aaa0617ae5cdbf35062843a03&imgtype=0&src=http%3A%2F%2Fimg.sc115.com%2Fuploads%2Fsc%2Fpng%2F140225%2Fcase.png');
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../lib/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/B/goods_detail.css" />
+
+    <title>商品分类</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="slide-img" src="../../images/10.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-img" src="../../images/10.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-img" src="../../images/10.png" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="goods-msg">
+            <p class="goods-title">宝得适britax百变骑士汽车儿童安全座椅isofix9款式类型</p>
+            <p class="goods-price">1999积分</p>
+            <div class="goods-status">
+                <span>全国顺丰包邮</span>
+                <span>库存状态：充足</span>
+                <span>已兑换：399</span>
+            </div>
+        </div>
+
+        <div class="goods-type">
+            <span>请选择：规格&nbsp;&nbsp;&nbsp;类型</span>
+            <img src="../../images/icon-more.png" />
+        </div>
+
+        <!-- good-detail里面可以套富文本内容 -->
+        <div class="goods-detail">
+            <img src="../../images/8.png" />
+        </div>
+
+        <!-- class 加上pay-disable就是支付不可用的样式 -->
+        <div class="goods-pay pay-disable">
+            <div class="footer-menu">
+                <div class="footer-menu-item">
+                    <a class="home"></a>
+                </div>
+                <div class="footer-menu-item">
+                    <a class="contact"></a>
+                </div>
+                <div class="footer-menu-item">
+                    <a class="cart">
+                        <i class="cart-num">6</i>
+                    </a>
+                </div>
+            </div>
+            <a class="add-cart-btn">
+                <img src="../../images/buy_tab_icon_add.png" />
+            </a>
+            <a class="pay-btn">立即兑换</a>
+        </div>
+
+        <div class="goods-type-select">
+            <div class="goods-type-content">
+                <a class="close-btn">
+                    <img src="../../images/login_del_icn.png" />
+                </a>
+                <div class="curr-goods-type">
+                    <img class="curr-goods-type-img" src="../../images/9.png" />
+                    <div class="curr-goods-msg">
+                        <p>
+                            <span class="curr-type-price">￥ 29.99</span>
+                            <span class="curr-type-oldprice">￥ 39.99</span>
+                        </p>
+                        <p class="curr-type-msg">
+                            <span>已选</span>
+                            <span>黄色</span>
+                            <span>1.5米</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="type-select">
+                    <div class="type-select-item">
+                        <p>颜色</p>
+                        <ul>
+                            <li class="type-selected">黄色</li>
+                            <li>军绿色</li>
+                            <li>黄色</li>
+                            <li>军绿色</li>
+                            <li>黄色</li>
+                            <li>军绿色</li>
+                        </ul>
+                    </div>
+                    <div class="type-select-item">
+                        <p>规格</p>
+                        <ul>
+                            <li class="select-disabled">2.8米</li>
+                            <li class="type-selected">1.5米</li>
+                            <li>2.8米</li>
+                            <li>1.5米</li>
+                            <li>2.8米</li>
+                            <li>1.5米</li>
+                        </ul>
+                    </div>
+                    <div class="select-num">
+                        <span>购买数量</span>
+                        <div class="select-num-content">
+                            <span class="reduce">-</span>
+                            <input class="select-goods-num" type="text" value="1" />
+                            <span class="add">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="confirm-pay-btn">确认</a>
+        </div>
+    </div>
+
+    <script src=" ../../lib/zepto/zepto.min.js "></script>
+    <script src="../../lib/swiper/swiper.min.js"></script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: false,
+            autoplayDisableOnInteraction: false,
+            speed: 1000,
+        });
+
+        // 弹出商品类型选择
+        $('.goods-type').click(function() {
+            $('.goods-type-select').show();
+            $('body').css('overflow', 'hidden');
+        });
+
+        // 关闭商品类型选择
+        $('.close-btn').click(function() {
+            $('.goods-type-select').hide();
+            $('body').css('overflow', 'visible');
+        });
+
+        // 选择商品类型
+        $('.type-select-item li').click(function() {
+            if (!$(this).attr('class') || $(this).attr('class').indexOf('select-disabled') == -1) {
+                $(this).closest('ul').find('li').removeClass('type-selected');
+                $(this).addClass('type-selected');
+            }
+        });
+
+        // 选择数量减少
+        $('.reduce').click(function() {
+            var num = $('.select-goods-num').val();
+            if (!isNaN(num) && parseInt(num) > 1) {
+                $('.select-goods-num').val(parseInt(num) - 1);
+            } else {
+                $('.select-goods-num').val(1);
+            }
+        });
+
+        // 选择数量增加
+        $('.add').click(function() {
+            var num = $('.select-goods-num').val();
+            if (!isNaN(num) && parseInt(num) >= 1) {
+                $('.select-goods-num').val(parseInt(num) + 1);
+            } else {
+                $('.select-goods-num').val(1);
+            }
+        });
+    </script>
+</body>
+
+</html>

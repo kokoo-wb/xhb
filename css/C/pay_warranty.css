@@ -1,0 +1,158 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.pay-item {
+    background: #fff;
+    margin: 0.1rem 0;
+}
+
+.pay-item-title {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    font-size: 0.36rem;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.insurance {
+    height: 1.66rem;
+    font-size: 0.3rem;
+    line-height: 1.66rem;
+    text-align: center;
+}
+
+.insurance-img {
+    width: 2.6rem;
+    height: 1rem;
+    position: relative;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.35rem;
+}
+
+.insurance-img img {
+    max-height: 1rem;
+    max-width: 2.6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insurance-price {
+    font-size: 0.36rem;
+    font-weight: bold;
+    float: right;
+    margin-right: 0.3rem;
+}
+
+.insurance-title {
+    font-size: 0.3rem;
+    color: #999;
+    float: right;
+    margin-right: 0.84rem;
+}
+
+.getway {
+    padding: 0.15rem 0;
+    overflow: hidden;
+    font-size: 0.3rem;
+}
+
+.mail {
+    position: relative;
+    width: 3.14rem;
+    border-right: 0.02rem solid #e8e8e8;
+    float: left;
+    height: 1.36rem;
+    padding: 0 0.3rem;
+    line-height: 1em;
+}
+
+.getway-select {
+    position: absolute;
+    right: 0.3rem;
+}
+
+.self-get {
+    position: relative;
+    width: 3.14rem;
+    float: left;
+    height: 1.36rem;
+    padding: 0 0.3rem;
+    line-height: 1em;
+}
+
+.getway-item {
+    width: 2.8rem;
+}
+
+.way-value {
+    margin-top: 0.1rem;
+}
+
+.set-address,
+.show-address {
+    color: #999;
+    margin-top: 0.22rem;
+    display: block;
+}
+
+.self-get-disabled {
+    color: #999;
+    margin-top: 0.04rem;
+    line-height: 1.5em;
+}
+
+.pay-way {
+    height: 0.9rem;
+    line-height: 0.3rem;
+}
+
+.wechat-ico {
+    width: 0.52rem;
+    height: 0.52rem;
+    margin-top: 0.2rem;
+    margin-left: 0.3rem;
+}
+
+.payway-select {
+    float: right;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.select-payway,
+.select-getway {
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.select-payway-selected,
+.select-getway-selected {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.confirm-btn {
+    display: block;
+    width: 7.5rem;
+    height: 0.97rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.97rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.3rem;
+}

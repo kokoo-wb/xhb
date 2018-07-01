@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/B/share_reward.css" />
+
+    <title>分享有礼</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <a class="reword-rules">奖励规则</a>
+        <a class="share-soon">立即分享</a>
+
+        <span class="share-num hundred">100人</span>
+        <span class="share-num fifty">50人</span>
+        <span class="share-num twenty">20人</span>
+        <span class="share-num ten">10人</span>
+        <span class="share-num five">5人</span>
+
+        <img class="wn" src="../../images/fxyl_snail_back.png" />
+
+        <div class="get-reward-modal">
+            <div class="get-reward-content">
+                <div class="reward-content">
+                    <h1>领取奖励</h1>
+                    <p>1、50积分</p>
+                    <p>2、跳跳虎毛绒公仔一只</p>
+                </div>
+
+                <div class="get-reward-area">
+                    <a class="get-reward-btn">领取</a>
+                </div>
+            </div>
+            <img class="close-btn" src="../../images/icon_close_white.png" />
+        </div>
+    </div>
+
+    <script src=" ../../lib/zepto/zepto.min.js "></script>
+
+    <script>
+        // 蜗牛爬行距离计算
+        function wnStatus(shareNum, openArr) {
+            switch (shareNum) {
+                case 5:
+                    $('.wn').css('top', '8.8rem').attr('src', '../../images/fxyl_snail_front.png');
+                    break;
+                case 10:
+                    $('.wn').css('top', '6.8rem').attr('src', '../../images/fxyl_snail_front.png');
+                    break;
+                case 20:
+                    $('.wn').css('top', '4.9rem').attr('src', '../../images/fxyl_snail_front.png');
+                    break;
+                case 50:
+                    $('.wn').css('top', '3rem').attr('src', '../../images/fxyl_snail_front.png');
+                    break;
+                case 100:
+                    $('.wn').css('top', '1.1rem').attr('src', '../../images/fxyl_snail_front.png');
+                    break;
+                default:
+                    var status = 10.5;
+                    if (shareNum < 5) {
+                        status = 10.5 - shareNum * ((10.5 - 8.8) / 5);
+                    } else if (shareNum > 5 && shareNum < 10) {
+                        status = 8.8 - (shareNum - 5) * ((8.8 - 6.8) / 5);
+                    } else if (shareNum > 10 && shareNum < 20) {
+                        status = 6.8 - (shareNum - 10) * ((6.8 - 4.9) / 10);
+                    } else if (shareNum > 20 && shareNum < 50) {
+                        status = 4.9 - (shareNum - 20) * ((4.9 - 3) / 30);
+                    } else if (shareNum > 50 && shareNum < 100) {
+                        status = 3 - (shareNum - 50) * ((3 - 1.1) / 50);
+                    } else {
+                        $('.wn').css('top', '1.1rem').attr('src', '../../images/fxyl_snail_front.png');
+                        break;
+                    }
+                    $('.wn').css('top', status + 'rem').attr('src', '../../images/fxyl_snail_back.png');
+            }
+
+            if (shareNum >= 5) {
+                console.log(openArr)
+                $('.five').html('<a class="gift-ico"></a>');
+                if (openArr.indexOf(5) >= 0 || openArr.indexOf('5') >= 0) {
+                    $('.five').find('.gift-ico').addClass('gift-ico-open');
+                }
+            }
+            if (shareNum >= 10) {
+                $('.ten').html('<a class="gift-ico"></a>');
+                if (openArr.indexOf(10) >= 0 || openArr.indexOf('10') >= 0) {
+                    $('.ten').find('.gift-ico').addClass('gift-ico-open');
+                }
+            }
+            if (shareNum >= 20) {
+                $('.twenty').html('<a class="gift-ico"></a>');
+                if (openArr.indexOf(20) >= 0 || openArr.indexOf('20') >= 0) {
+                    $('.twenty').find('.gift-ico').addClass('gift-ico-open');
+                }
+            }
+            if (shareNum >= 50) {
+                $('.fifty').html('<a class="gift-ico"></a>');
+                if (openArr.indexOf(50) >= 0 || openArr.indexOf('50') >= 0) {
+                    $('.fifty').find('.gift-ico').addClass('gift-ico-open');
+                }
+            }
+            if (shareNum >= 100) {
+                $('.hundred').html('<a class="gift-ico"></a>');
+                if (openArr.indexOf(100) >= 0 || openArr.indexOf('100') >= 0) {
+                    $('.hundred').find('.gift-ico').addClass('gift-ico-open');
+                }
+            }
+        }
+
+        // 传入分享数及打开过的礼物数组，得到蜗牛当前爬行距离
+        wnStatus(20, [5]);
+
+        $('.gift-ico').on('click', function() {
+            $('.get-reward-modal').show();
+        });
+
+        $('.close-btn').on('click', function() {
+            $('.get-reward-modal').hide();
+        });
+
+        $('.get-reward-btn').on('click', function() {
+            $('.get-reward-modal').hide();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.car-manage {
+    background: #fff;
+    margin: 0.1rem 0;
+}
+
+.car-manage-title {
+    height: 0.88rem;
+    line-height: 0.88rem;
+    font-size: 0.36rem;
+    text-align: center;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.op-btn {
+    position: absolute;
+    color: #e72d28;
+    font-size: 0.3rem;
+    right: 0.3rem;
+}
+
+.car-item {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    height: 1.44rem;
+    overflow: hidden;
+}
+
+.car-msg {
+    font-size: 0.3rem;
+    line-height: 1em;
+}
+
+.car-msg p {
+    margin-top: 0.27rem;
+    margin-left: 0.3rem;
+    overflow: hidden;
+}
+
+.car-msg p img {
+    width: 0.4rem;
+    height: 0.28rem;
+    float: left;
+}
+
+.car-msg p:last-child img {
+    width: 0.26rem;
+    height: 0.3rem;
+    padding: 0 0.07rem;
+}
+
+.car-msg p span {
+    margin-top: 0.27rem;
+    margin-left: 0.3rem;
+    overflow: hidden;
+}
+
+.car-delete {
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+    margin-top: -0.16rem;
+}
+
+.delete-car {
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/icon_delete.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

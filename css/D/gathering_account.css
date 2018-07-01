@@ -1,0 +1,86 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.gathering-form {
+    margin-top: 0.1rem;
+    background: #fff;
+}
+
+.gathering-form-item {
+    height: 0.88rem;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.gathering-form-item:last-child {
+    border: 0;
+}
+
+.gathering-form-item span:first-child {
+    display: block;
+    float: left;
+    width: 1.98rem;
+    padding-left: 0.32rem;
+    line-height: 0.88rem;
+}
+
+.gathering-form-item span:last-child {
+    display: block;
+    float: left;
+    width: 4.7rem;
+    line-height: 0.88rem;
+}
+
+.gathering-form-item input {
+    height: 0.88rem;
+    width: 4.7rem;
+    border: 0;
+    font-size: 0.3rem;
+    outline: none;
+}
+
+.get-reward-rules {
+    line-height: 1em;
+    margin-top: 0.32rem;
+    overflow: hidden;
+}
+
+.get-reward-rules a {
+    margin-left: 0.32rem;
+    float: left;
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/icon_help.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.get-reward-rules span {
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.confirm-btn {
+    display: block;
+    width: 6.9rem;
+    height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.88rem;
+    margin-top: 5.11rem;
+    margin-bottom: 0.98rem;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+}

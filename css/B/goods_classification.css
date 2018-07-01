@@ -1,0 +1,34 @@
+.container {
+    background: #fff;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.classification {
+    font-size: 0.32rem;
+    text-align: center;
+}
+
+.classification li {
+    width: 2.5rem;
+    float: left;
+    padding: 0.54rem 0 0.36rem;
+}
+
+.classification li img {
+    width: 1.2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: 1px solid #ccc;
+}
+
+.classification li p {
+    line-height: 1em;
+    margin-top: 0.3rem;
+}
+
+.classification .show-all {
+    border: 0;
+}

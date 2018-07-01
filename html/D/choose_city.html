@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/D/choose_city.css" />
+
+    <title>选择城市</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="curr-city">
+            <span>当前城市</span>
+            <span class="curr-city-name">广州</span>
+        </div>
+        <div name="A" id="A" class="zm-list">A</div>
+        <ul class="area-list">
+            <li>
+                <span>美国</span>
+            </li>
+            <li>
+                <span>埃及</span>
+            </li>
+            <li>
+                <span>埃塞俄比亚</span>
+            </li>
+        </ul>
+        <div name="B" id="B" class="zm-list">B</div>
+        <ul class="area-list">
+            <li>
+                <span>美国</span>
+            </li>
+            <li>
+                <span>埃及</span>
+            </li>
+            <li>
+                <span>埃塞俄比亚</span>
+            </li>
+        </ul>
+        <div name="C" id="C" class="zm-list">C</div>
+        <ul class="area-list">
+            <li>
+                <span>美国</span>
+            </li>
+            <li>
+                <span>埃及</span>
+            </li>
+            <li>
+                <span>埃塞俄比亚</span>
+            </li>
+        </ul>
+        <div name="D" id="D" class="zm-list">D</div>
+        <ul class="area-list">
+            <li>
+                <span>美国</span>
+            </li>
+            <li>
+                <span>埃及</span>
+            </li>
+            <li>
+                <span>埃塞俄比亚</span>
+            </li>
+        </ul>
+        <div name="E" id="E" class="zm-list">E</div>
+        <ul class="area-list">
+            <li>
+                <span>美国</span>
+            </li>
+            <li>
+                <span>埃及</span>
+            </li>
+            <li>
+                <span>埃塞俄比亚</span>
+            </li>
+        </ul>
+
+    </div>
+    <div class="choose-zm">
+        <div class="zm-menu-area">
+            <a href="#A">#</a>
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#X">R</a>
+            <a href="#Y">S</a>
+            <a href="#Z">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#Z">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </div>
+    </div>
+
+    <script src="../../lib/zepto/zepto.min.js"></script>
+
+</body>
+
+</html>

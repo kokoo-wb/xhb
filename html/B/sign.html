@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../lib/calendar/calendar.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/B/sign.css" />
+
+    <title>每日签到</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="sign-title">
+            <span>累计签到</span>
+            <span class="sign-num">105</span>
+            <span>天</span>
+        </h1>
+        <p class="continute-sign">
+            <span>连续签到</span>
+            <span class="sign-num">34</span>
+            <span>天</span>
+        </p>
+
+        <div class="show-data-btn">
+            <a class="show-rules">奖励规则</a>
+            <a class="show-ranking">签到排行</a>
+        </div>
+
+        <div class="calendar-area">
+            <div id="container"></div>
+        </div>
+
+        <button class="submit-btn">签 到</button>
+
+        <div class="sign-rules-modal">
+            <div class="sign-rules">
+                <p>整体规则：</p>
+                <p>1、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>2、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>3、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+                <p>4、中积分后，弹框提示“恭喜你开出xx奖获得100积分！</p>
+                <p>5、一个奖项内会有若干种奖品，当摇出某个奖项，则实际获得的奖品从对应的奖项分类中随机获取。</p>
+                <p>6、幸运奖、三等奖是积分奖励；二等、一等、超级是实物奖励</p>
+                <p>7、中实物奖后，弹框提示“恭喜你开出xx奖商品名称一件！”。商城后台物流清单自动添加一条物流信息，收货地址是用户在个人中心填写的地址。</p>
+            </div>
+
+            <img class="close-btn" src="../../images/icon_close_white.png" />
+        </div>
+
+    </div>
+
+
+    <script src=" ../../lib/zepto/zepto.min.js "></script>
+    <script src=" ../../lib/calendar/calendar.js "></script>
+
+    <script>
+        var now = new Date();
+        var year = now.getFullYear();
+        var month = now.getMonth() + 1;
+        var date = now.getDate();
+
+        month = month >= 10 ? month : '0' + month;
+        date = date >= 10 ? date : '0' + date;
+
+        var nowDate = year + '/' + month + '/' + date;
+
+        var data = [{
+            'stamp': (new Date(nowDate)).getTime(),
+            'className': 'date-active',
+        }];
+
+        var calendar = new Calendar({
+            // 用户传入实际的数据
+            container: 'container',
+            angle: 14,
+            isMask: false, // 是否需要弹层
+            beginTime: [], //如空数组默认设置成1970年1月1日开始,数组的每一位分别是年月日。
+            endTime: [], //如空数组默认设置成次年12月31日,数组的每一位分别是年月日。
+            recentTime: [], //如空数组默认设置成当月1日,数组的每一位分别是年月日。
+            isSundayFirst: true, // 周日是否要放在第一列
+            isShowNeighbor: true, // 是否展示相邻月份的月尾和月头
+            isToggleBtn: true, // 是否展示左右切换按钮
+            isChinese: true, // 是否是中文
+            monthType: 0, // 0:1月, 1:一月, 2:Jan, 3: April
+            canViewDisabled: false, // 是否可以阅读不在范围内的月份
+            switchRender: function(year, month, cal) {
+                cal.renderCallbackArr(data);
+            }
+        });
+
+        calendar.renderCallbackArr(data);
+
+
+        // 弹出游戏规则
+        $('.show-rules').click(function() {
+            $('.sign-rules-modal').show();
+            $('body').css('overflow', 'hidden');
+        });
+
+        // 关闭游戏规则
+        $('.close-btn').click(function() {
+            $('.sign-rules-modal').hide();
+            $('body').css('overflow', 'visible');
+        });
+    </script>
+</body>
+
+</html>

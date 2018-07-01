@@ -1,0 +1,203 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.indiana-show {
+    background: #fff;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.62rem;
+}
+
+.indiana-rules {
+    font-size: 0.3rem;
+    padding: 0.3rem;
+}
+
+.begin-time {
+    margin-left: 0.1rem;
+    color: #ec5e2a
+}
+
+.show-game-rules-btn {
+    border: 1px solid #333;
+    float: right;
+    padding: 0.03rem 0.18rem;
+    border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    -o-border-radius: 0.08rem;
+    position: relative;
+    bottom: 0.05rem;
+}
+
+.indiana-intro {
+    font-size: 0.26rem;
+    color: #999;
+    padding: 0 0.3rem;
+}
+
+.indiana-cover {
+    width: 7.5rem;
+    height: 4.08rem;
+    margin-top: 0.5rem;
+    background-image: url('../../images/bg_lldb.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.indiana-cover img {
+    display: block;
+    margin: 0 auto;
+    max-height: 4.08rem;
+    max-width: 4.08rem;
+}
+
+.indiana-title {
+    text-align: center;
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.join-btn {
+    width: 6.9rem;
+    height: 0.88rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 0.32rem;
+    line-height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    margin-top: 0.3rem;
+}
+
+.reward-record {
+    background: #fff;
+    font-size: 0.3rem;
+}
+
+.reward-record-title {
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.reward-record-item {
+    padding: 0.3rem;
+}
+
+.down-icon {
+    float: right;
+    width: 0.22rem;
+    height: 0.12rem;
+    position: relative;
+    top: 0.12rem;
+}
+
+.reward-record-time {
+    float: right;
+    margin-right: 0.2rem;
+    color: #999;
+}
+
+.reward-user-list {
+    display: none;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+
+.open .reward-user-list {
+    display: block;
+}
+
+.reward-user-list li {
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+    margin-left: 0.3rem;
+    padding: 0.28rem 0;
+}
+
+.reward-user-list li:last-child {
+    border-bottom: 0;
+}
+
+.user-img {
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    float: left;
+}
+
+.user-reword {
+    float: right;
+    width: 6.1rem;
+}
+
+.user-msg-top {
+    margin-top: 0.03rem;
+}
+
+.user-msg-top span:last-child {
+    float: right;
+    margin-right: 0.3rem;
+}
+
+.user-msg-bottom {
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.user-id {
+    margin-left: 0.15rem;
+}
+
+.user-msg-bottom span:last-child {
+    float: right;
+    margin-right: 0.3rem;
+    width: 1.7rem;
+    display: block;
+    text-align: center;
+}
+
+.game-rules-modal {
+    display: none;
+    position: fixed;
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.game-rules {
+    width: 6.3rem;
+    background: #fff;
+    padding: 0.3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    font-size: 0.26rem;
+    border-radius: 0.15rem;
+}
+
+.game-rules p {
+    margin-bottom: 0.1rem;
+}
+
+.close-btn {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+    margin: 0 auto;
+    margin-top: 1.26rem;
+}

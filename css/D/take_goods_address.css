@@ -1,0 +1,147 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 0.3rem;
+}
+
+.address-msg {
+    position: relative;
+    line-height: 1em;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 0.1rem;
+    height: 2.38rem;
+}
+
+.address-msg:last-child {
+    margin-bottom: 2.76rem;
+}
+
+.address-msg-detail {
+    padding: 0 0.3rem;
+}
+
+.choose-address {
+    position: relative;
+    height: 0.88rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+.address-msg p {
+    overflow: hidden;
+    margin: 0.28rem 0;
+    height: 0.32rem;
+}
+
+.username-ico {
+    width: 0.26rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.username {
+    margin-left: 0.1rem;
+    float: left;
+    margin-right: 0.56rem;
+}
+
+.phone-ico {
+    width: 0.21rem;
+    height: 0.3rem;
+    float: left;
+}
+
+.phone {
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.more-ico {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    right: 1.12rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.delete-ico {
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.default-ico {
+    display: none;
+    color: #fff;
+    background: #e72d28;
+    border-radius: 0.1rem;
+    margin-left: 0.24rem;
+    float: left;
+    font-size: 0.24rem;
+    padding: 0.04rem 0.08rem;
+    line-height: 1em;
+}
+
+.set-default {
+    position: relative;
+    display: block;
+    height: 0.88rem;
+    width: 2rem;
+    margin-left: 0.3rem;
+}
+
+.set-default a {
+    float: left;
+    height: 0.32rem;
+    width: 0.32rem;
+    display: block;
+    background-image: url('../../images/sel_def.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.16rem;
+}
+
+.set-default span {
+    font-size: 0.26rem;
+    line-height: 0.88rem;
+    margin-left: 0.43rem;
+}
+
+.set-default-selected a {
+    background-image: url('../../images/sel_selected.png');
+}
+
+.set-default-selected span {
+    color: #FF7e00;
+}
+
+.set-default-selected .default-ico {
+    display: inline;
+}
+
+.add-address-btn {
+    display: block;
+    width: 6.9rem;
+    height: 0.88rem;
+    background: -webkit-linear-gradient(left top, #f04915, #d33c3c);
+    background: -o-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: -moz-linear-gradient(bottom right, #f04915, #d33c3c);
+    background: linear-gradient(to bottom right, #f04915, #d33c3c);
+    color: #fff;
+    text-align: center;
+    line-height: 0.88rem;
+    border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
+    -moz-border-radius: 0.15rem;
+    -o-border-radius: 0.15rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}

@@ -1,0 +1,250 @@
+.container {
+    background: #f3f4f3;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.swiper-container {
+    height: 4.2rem;
+}
+
+.slide-img {
+    width: 7.5rem;
+    height: 4.2rem;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff8600;
+}
+
+.type-menu {
+    font-size: 0.22rem;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.3rem 0;
+    line-height: 1em;
+    background: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.type-menu a {
+    display: block;
+    width: 1.5rem;
+    float: left;
+    color: #666;
+}
+
+.type-menu a img {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.hot-goods {
+    background: #fff;
+    margin-bottom: 1.1rem;
+}
+
+.hot-goods-sign {
+    font-size: 0.3rem;
+    text-decoration: 0.3rem;
+    text-align: center;
+    background-image: url('../../images/hot-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem 0.08rem;
+    padding: 0.15rem;
+}
+
+.hot-goods-sign img {
+    width: 0.36rem;
+    height: 0.36rem;
+    position: relative;
+    top: 0.06rem
+}
+
+.hot-goods-list {
+    font-size: 0.26rem;
+    width: 7.56rem;
+    overflow: hidden;
+}
+
+.hot-goods-list li {
+    width: 3.35rem;
+    border-right: 1px solid #f3f4f3;
+    border-bottom: 1px solid #f3f4f3;
+    padding: 0.3rem 0.2rem;
+    float: left;
+}
+
+.goods-cover {
+    width: 3.35rem;
+    height: 3.5rem;
+}
+
+.goods-cover img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods-title {
+    padding-right: 0.2rem;
+}
+
+.goods-price {
+    margin-top: 0.3rem;
+    color: #ec5e2a
+}
+
+.goods-price span:first-child {
+    font-size: 0.32rem;
+}
+
+.goods-price span:last-child {
+    font-size: 0.2rem;
+}
+
+.goods-price a {
+    width: 0.98rem;
+    height: 0.44rem;
+    display: block;
+    float: right;
+    background: #ec5e2a;
+    color: #fff;
+    text-align: center;
+    line-height: 0.44rem;
+    border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
+    -moz-border-radius: 0.08rem;
+    -o-border-radius: 0.08rem;
+    font-size: 0.26rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.contact {
+    font-size: 0.3rem;
+    text-align: center;
+    width: 7.54rem;
+    height: 1rem;
+}
+
+.contact a {
+    display: block;
+    float: left;
+    width: 2.5rem;
+    border-right: 0.02rem solid #e8e8e8;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.contact a:last-child {
+    border-right: 0;
+    height: 1rem;
+    line-height: normal;
+    display: block;
+    float: left;
+    width: 2.5rem;
+}
+
+.contact-time {
+    margin-top: 0.1rem;
+}
+
+.menu {
+    font-size: 0.3rem;
+    text-align: center;
+    height: 1rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+.menu-item {
+    float: left;
+    width: 1.875rem;
+    height: 1rem;
+}
+
+.home a,
+.bill a,
+.me a,
+.message a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.home a {
+    width: 0.64rem;
+    height: 0.6rem;
+    background-image: url('../../images/tab_icon_home_def.png');
+}
+
+.bill a {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-image: url('../../images/tab_icon_bill_def.png');
+}
+
+.me a {
+    width: 0.58rem;
+    height: 0.58rem;
+    background-image: url('../../images/tab_icon_me_def.png');
+}
+
+.message a {
+    width: 0.62rem;
+    height: 0.59rem;
+    background-image: url('../../images/tab_icon_message_def.png');
+    position: relative;
+}
+
+.message .msg-num {
+    right: -0.13rem;
+    top: -0.1rem;
+}
+
+.msg-num {
+    height: 0.3rem;
+    display: block;
+    position: absolute;
+    font-style: normal;
+    font-size: 0.22rem;
+    background: #eb4b4b;
+    color: #fff;
+    right: -0.03rem;
+    top: -0.05rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 0 0.08rem;
+}
+
+.home .active {
+    background-image: url('../../images/tab_icon_home_sel.png');
+}
+
+.bill .active {
+    background-image: url('../../images/tab_icon_bill_sel.png');
+}
+
+.me .active {
+    background-image: url('../../images/tab_icon_me_sel.png');
+}
+
+.message .active {
+    background-image: url('../../images/tab_icon_message_sel.png');
+}
